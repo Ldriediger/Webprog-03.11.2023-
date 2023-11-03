@@ -1,0 +1,111 @@
+/* Hintergrundbild und grundlegende Styling für den Body */
+body {
+    background-image: url("HintergrundFahrer.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* Abstandselement zwischen Header und "Zurück"-Schaltfläche */
+.Abstand {
+    display: flex;
+}
+
+/* Styling für die "Zurück"-Schaltfläche */
+.zurück {
+    color: #042dd4;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+/* Styling für den Header */
+.site-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+/* Styling für die Überschrift im Header */
+.header-title {
+    justify-content: center;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Styling für den Hauptinhalt und die Tabellenzellen */
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styling für die Tabelle */
+table {
+    border: 2px solid #000;
+    border-spacing: 10px;
+    box-shadow: 2px 2px 2px #888;
+}
+
+/* Styling für Tabellenzellen (TD und TH) */
+td, th {
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/* Styling für den Hauptinhalt */
+.content {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+/* Styling für den Bildcontainer */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Styling für Bilder */
+img {
+    border: 3px solid #0077FF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888;
+    margin: 70px 0px 0px 30px;
+    max-width: 40%;
+    height: auto;
+}
+
+/* Styling für die linke Tabelle */
+.left-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Styling für Tabellenzellen in der linken Tabelle */
+.left-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Query für Bildschirme mit maximaler Breite von 768px */
+@media (max-width: 768px) {
+    .site-header {
+        padding: 20px 0;
+    }
+
+    .header-title {
+        font-size: 24px;
+    }
+}
+
+

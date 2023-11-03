@@ -1,0 +1,121 @@
+  /* Globale Stildefinitionen */
+  html{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+  }
+  body{
+  margin: 0;
+  }
+  /* Stildefinitionen für den Header */
+  header h6{
+    margin: 0;
+    color: #FFFF00;
+  }
+  header{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-image: url(Zielflagge.jpg);
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  }
+  /* Stildefinitionen für den Footer */
+  footer{
+    font-family: sans-serif;
+    font-size: large;
+    color: #FFFF00;
+  }
+  /* Stildefinitionen für den zentralen Header-Bereich */
+  .header {
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+  /* Stildefinitionen für den Hauptinhalt */
+  body {
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Stildefinitionen für die Suchleiste */
+  .suchleiste{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  #search-input {
+    padding: 10px;
+    width: 300px; 
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  #search-button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  #search-button:hover {
+    background-color: #00FF00;
+  }
+  /* Stildefinitionen für Bilder */
+  main .Bildhover img:hover{
+    display: flex;
+    position: relative;
+    margin: 20px, 0, 0, 20px;
+    transition: transform 0.7s ease-out;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .Bilder{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 350px;
+    height: 200px;
+  }
+  /* CSS in der styles.css-Datei */
+  .suggestions-popup {
+    text-align: center;
+    background-color: #fff;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    left: 0;
+    z-index: 1; /* Damit das Popup über anderen Inhalten liegt */
+    width: 300px; 
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  .suggestions-popup ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .suggestions-popup li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc; /* Fügt Trennlinien zwischen den Vorschlägen hinzu */
+  }
+
+  .suggestions-popup li:last-child {
+    border-bottom: none; /* Entfernt die Trennlinie am unteren Rand */
+  }
+
+  .suggestions-popup li:hover {
+    background-color: #f0f0f0;
+  }

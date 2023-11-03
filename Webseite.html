@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Webseite zum Portfolio von Webprogrammierung</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Einbinden des Bootstrap-CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <!-- Einbinden des Bootstrap-JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Einbinden des JavaScript-Codes -->
+    <script src="suchvorschläge.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <!-- Überschrift im Header -->
+            <h6 class="h1">Die Königsklasse des Motorsports</h6>
+        </div>
+        <!-- Suchleiste im Header -->
+        <div class="suchleiste">
+            <input type="text" id="search-input" placeholder="Suche nach Formel 1 Fahrern...">
+            <button type="button" id="search-button">Suchen</button>
+        </div>
+        <!-- Suchvorschlags-Popup -->
+        <div class="suggestions-popup" id="suggestions">
+            <ul id="suggestionList"></ul>
+        </div>
+    </header>
+    <main>
+        <!-- Hauptinhalt -->
+        <div class="container-fluid">
+            <!-- Zeilen und Spalten für die Bilder -->
+            <div class="row">
+                <div class="col-md d-flex justify-content-center">
+                    <a href="WebseiteMaxVerstappen.html">
+                        <div class="Bildhover">
+                            <img class="Bilder rounded-3" src="MaxVerstappen.jpg" alt="Max Verstappen">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md d-flex justify-content-center">
+                    <a href="WebseiteAuto2.html">
+                        <div class="Bildhover">
+                            <img class="Bilder rounded-3" src="SebastianVettel" alt="Sebastian Vettel">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md d-flex justify-content-center">
+                <a href="WebseiteAuto3.html">
+                    <div class="Bildhover">
+                        <img class="Bilder rounded-3" src="CharlesLeclerc.jfif" alt="Charles Leclerc">
+                    </div>
+                </a>
+            </div>
+            <div class="col-md d-flex justify-content-center">
+                <a href="WebseiteAuto4.html">
+                    <div class="Bildhover">
+                        <img class="Bilder rounded-3" src="KimiRäikkönen.webp" alt="Kimi Räikkönen">
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer mit Impressum-Link -->
+        <span class="footer">Impressum</span>
+    </footer>
+</body>
+
+</html>
